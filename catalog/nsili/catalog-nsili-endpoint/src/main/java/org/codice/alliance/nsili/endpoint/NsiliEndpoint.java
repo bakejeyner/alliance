@@ -394,4 +394,8 @@ public class NsiliEndpoint implements CorbaServiceListener, QuerySources {
   public static synchronized void setGuestSubject(Subject subject) {
     guestSubject = subject;
   }
+
+  public static synchronized void setSecurityManagerStatic(SecurityManager securityManager) {
+    NsiliEndpoint.securityManager = securityManager;
+  }
 }
